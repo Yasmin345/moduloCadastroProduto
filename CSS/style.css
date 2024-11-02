@@ -15,99 +15,45 @@ header{
     background-color: #0099DD;
     height: 90px;
     display: flex;
+    border-bottom: #ff8500 5px solid;
     
 }
 
 .titulo P{
     font-size: 50px;
     color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    border: red 1px solid;
+    
 }
 .titulo{
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
+    margin-left: 30%;
     align-items: center ;
+    gap: 8px;
+    
 }
 
 
 .logo img {
-    margin-left: 5%;
+    margin-left: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.form {
-    background-color: #DAEBF2; 
-    max-width: 80%; 
-    margin: 40px auto; 
-    padding: 20px;
-    border-radius: 15px; 
-    text-align: left;
-    border: #0099DD 5px solid;
-    font-size: 25px;
 
 }
-
-.form input,.form select {
-
-    padding: 10px; 
-    border-radius: 20px; 
-    border: 5px solid;
-    color:#053852;
-    font-weight: bold;
-    border-color: #0099DD;
-
+.pesquisar img{
+    margin-left: 5%;
+    margin-right: 90px;
 }
-
-.form label{
-    margin-bottom: 2px;
-    color:#0099DD;
-}
-
-
-.line {
-    display:flex;
-    gap: 10%;
-}
-
-#completo {
-    max-width: 100%;
-    margin-top:15px;
-    display: grid;
-}
-
-
-
-#curto{
-    width: 100%;
-    display: grid;
-    margin-top: 30px;
-}
-
-
-button {
-    position: relative;
-    left: 34%;
+.pesquisar{
+    display: flex;
     width: 30%;
-    padding: 10px;
-    background-color:white; 
-    color:#ff8500;
-    border: 5px solid;
-    border-radius: 25px; 
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-button:hover {
-    background-color: #ff8500;
-    color: #ffffff;
-    border:#ff8500 5px solid;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 35px;
+    border: red 1px solid;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 
