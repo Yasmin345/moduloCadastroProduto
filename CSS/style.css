@@ -15,12 +15,12 @@ header{
     background-color: #0099DD;
     height: 90px;
     display: flex;
-    border-bottom: #ff8500 5px solid;
+    border-bottom: #ff9933 5px solid;
     
 }
 
 .titulo P{
-    font-size: 50px;
+    font-size: 60px;
     color: #ffffff;
     
 }
@@ -28,7 +28,7 @@ header{
     display: flex;
     margin-left: 30%;
     align-items: center ;
-    gap: 8px;
+    gap: 15px;
     
 }
 
@@ -47,13 +47,33 @@ header{
 .pesquisar{
     display: flex;
     width: 30%;
-    background-color: #d9d9d9;
+    background-color: #e0dcdc;
     border-radius: 20px;
     margin: 0 auto;
     height: 35px;
-    border: red 1px solid;
     margin-top: 20px;
     font-size: 25px;
+}
+
+#botoes{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    border: red 1px solid;
+    margin-top: 40px;
+}
+
+#bot{
+    display:flex;
+    border-radius: 10px;
+    border:#ff9933 5px solid;
+    font-size: 20px;
+    color: #ff9933;
+    font-weight: bold;
+    align-items: center;
+    fill: none;
+    background-color: transparent;
+    padding: 10px;
 }
 
 
