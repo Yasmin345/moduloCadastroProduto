@@ -59,7 +59,6 @@ header{
     display: flex;
     gap: 20%;
     justify-content: center;
-    border: red 1px solid;
     margin-top: 40px;
 }
 
@@ -71,9 +70,57 @@ header{
     color: #ff9933;
     font-weight: bold;
     align-items: center;
-    fill: none;
     background-color: transparent;
     padding: 10px;
+}
+
+.descricoes{
+    font-size: 25px;
+    color: #263672;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left:25px;
+    margin-right: 25px;
+   
+}
+
+.descricoes p {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+.listagem{
+    margin-top: 20px;
+    display: block;
+    background-color: #0099DD;
+    border-radius: 15px;
+    border: #ff9933 5px solid;
+    padding: 10px;
+}
+
+.registro{
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left:25px;
+    margin-right: 25px;
+
+}
+
+.registro p{
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+#more{
+    background-color: transparent;
+    border-radius: 25px;
+    border: none;
 }
 
 
