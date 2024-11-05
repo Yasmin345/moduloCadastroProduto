@@ -36,7 +36,69 @@
                 <p>Cadastrar Produto</p>
             </button>
 
-            <div class="popup"></div>
+            <div class="janela-popup" id="janela-popup">
+                <section id="popup-cadastrar">
+                    <div class="form">
+                <div class="icon">
+                    <img src="assets/produtos.svg" alt="Produtos">
+                </div>
+                <form action="formulario" method="post">
+                    <div id="completo">
+                        <label>Nome do produto</label>
+                        <input type="text" id="nome"><br>
+                    </div>
+
+                    <div id="completo">
+                        <label>Descrição</label>
+                        <input type="text" id="Descrição">
+                    </div>
+                    
+                        <div class="line">
+                            <div id="curto">
+                                <label>Categoria</label>
+                                <select name="categoria">
+                                <option value="" disabled selected>Selecione um item</option>
+                                <option value="Alimentos e Bebidas"> Alimentos e Bebidas</option><br>
+                                <option value="Alimentos Industrializados">Alimentos Industrializados</option><br>
+                                <option value="Bebidas Alcoólicas">Bebidas Alcoólicas</option><br>
+                                <option value="Limpeza Doméstica">Limpeza Doméstica</option>
+                                </select>
+                            </div>
+
+                            <div id="curto">
+                                <label> Quantidade</label>
+                                <input type="number" id = "Quantidade">
+                            </div>
+                        </div>
+
+                        <div class="line">
+                            <div id="curto">
+                                <label> Data de Fabricação</label>
+                                <input type="date" id = "fabricação">
+                            </div>
+
+                            <div id="curto">
+                                <label> Data de Validade</label>
+                                <input type="date" id = "validade">
+                            </div>
+                        </div>
+
+                        <div class="line">
+                            <div id="curto">
+                                <label>Preço de Compra</label>
+                                <input type="text" id="valor" name="valor" placeholder="0,00" pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                            </div>
+
+                        <div id="curto">
+                            <label>Preço de Venda</label>
+                            <input type="text" id="valor2" name="valor2" placeholder="0,00" pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                        </div>
+                    </div>
+                    <button type="submit">CADASTRAR</button>
+                </form>
+        </div> 
+        </section>
+            </div>
 
             <button id="bot">
                 <img src="assets/funil.svg" alt="Filtrar">

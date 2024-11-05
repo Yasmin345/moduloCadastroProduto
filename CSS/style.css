@@ -44,6 +44,7 @@ header{
     margin-left: 5%;
     margin-right: 90px;
 }
+
 .pesquisar{
     display: flex;
     width: 30%;
@@ -67,6 +68,7 @@ header{
     color: #ffffff;
     cursor: pointer;
 }
+
 #bot:hover img {
     filter: brightness(0) invert(1); 
 }
@@ -82,6 +84,91 @@ header{
     background-color: transparent;
     padding: 10px;
 }
+
+#janela-popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.form {
+    position: relative;
+    top: 25px;
+    background-color: #DAEBF2; 
+    max-width: 50%; 
+    margin: 5px auto; 
+    padding: 5px 15px; 
+    border-radius: 10px; 
+    text-align: left;
+    border: #0099DD 4px solid;
+    font-size: 18px; 
+}
+.icon img{
+    margin: 0 auto;
+    display: block;
+}
+
+.form input,.form select {
+
+    padding: 5px; 
+    border-radius:10px; 
+    border: 5px solid;
+    color:#053852;
+    font-weight: bold;
+    border-color: #0099DD;
+
+}
+
+.form label{
+    margin-bottom: 1;
+    color:#0099DD;
+}
+
+
+.form .line {
+    display: flex;
+    gap: 2%; 
+    margin-bottom: 5px; 
+}
+
+.form #completo {
+    max-width: 100%;
+    display: grid;
+}
+
+.form #curto{
+    width: 100%;
+    display: grid;
+    margin-top: 10px;
+}
+
+
+.form button {
+    position: relative;
+    left: 34%;
+    width: 30%;
+    padding: 8px;
+    background-color:white; 
+    color:#ff8500;
+    border: 5px solid;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff8500;
+    color: #ffffff;
+    border:#ff8500 5px solid;
+}
+
 
 .descricoes{
     font-size: 25px;
@@ -130,6 +217,3 @@ header{
     border-radius: 25px;
     border: none;
 }
-
-
-
