@@ -65,9 +65,10 @@ header{
 #bot:hover{
     background-color: #ff9933;
     color: #ffffff;
+    cursor: pointer;
 }
-#bot img:hover{
-    fill: (255, 255, 255);
+#bot:hover img {
+    filter: brightness(0) invert(1); 
 }
 
 #bot{
@@ -90,7 +91,6 @@ header{
     justify-content: center;
     margin-left:25px;
     margin-right: 25px;
-   
 }
 
 .descricoes p {
