@@ -9,38 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assests/img/favicon.ico" type="image/x-icon">
+    
 </head>
 <body>
     
 
     <header>
         <div class="logo">
-            <a href="#"><img src="assets/logo.svg" alt="Logo"></a>
+            <a href="#"><img src="assets/svg/logo.svg" alt="Logo"></a>
         </div>
         <div class="titulo">
-            <img src="assets/produtos.svg" alt="PRODUTO"> 
+            <img src="assets/svg/produtos.svg" alt="PRODUTO"> 
             <p>PRODUTOS</p>
         </div>
     </header>
     <main>
         <section id="pesquisa">
             <div class="pesquisar">
-                <img src="assets/search-svgrepo-com.svg" alt="Lupa">
-                <p style="color: #8d8d8d;">Pesquisar</p>
+                <img src="assets/svg/search-svgrepo-com.svg" alt="Lupa">
+                <input type="text" placeholder="Pesquisar..." />
             </div>
         </section>
 
         <section id="botoes">
             <button id="bot">
-                <img src="assets/add.svg" alt="Cadastrar">
+                <img src="assets/svg/add.svg" alt="Cadastrar">
                 <p>Cadastrar Produto</p>
             </button>
 
-            <div class="janela-popup" id="janela-popup">
+            <div class="janela_popup" id="janela_popup">
                 <section id="popup-cadastrar">
                     <div class="form">
                 <div class="icon">
-                    <img src="assets/produtos.svg" alt="Produtos">
+                    <img src="assets/svg/produtos.svg" alt="Produtos">
                 </div>
                 <form action="formulario" method="post">
                     <div id="completo">
@@ -100,11 +101,43 @@
         </section>
             </div>
 
-            <button id="bot">
-                <img src="assets/funil.svg" alt="Filtrar">
+            <button id="bot2">
+                <img src="assets/svg/funil.svg" alt="Filtrar">
                 <p>Filtrar Categoria</p>
             </button>
+            <div class="janela">
+                <section id="pcat">
+                    <div class="popupcat">
+                        <div class="barra">
+                            <img src="assets/svg/search-alt-2-svgrepo-com.svg" alt="Lupa">
+                            <input type="text" name="categoria" id="categoria" placeholder="Categoria">
+                        </div>
+        
+                        <div class="imagens">
+                                <img src="assets/svg/diretitasvgrepo-com.svg" alt="Direita" style="border: none;">
+                            <figure>
+                                <img src="assets/img/car.jpg" alt="Carnes">
+                                <figcaption>Carnes</figcaption>
+                            </figure>
+                            
+                            <figure>
+                                <img src="assets/img/lei.jpg" alt="Frios e Laticinios">
+                                <figcaption>Laticinios</figcaption>
+                            </figure>
+        
+                            <figure>
+                                <img src="assets/img/pao-frances-cenourao-5-unidades.avif" alt="Pães">
+                                <figcaption>Pães</figcaption>
+                            </figure>
+                        
+                            <img src="assets/svg/esquerdasvgrepo-com.svg" alt="Esquerda" style="border: none;">
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
         </section>
+
 
         <section id="lista">
             <div class="descricoes">
@@ -124,7 +157,7 @@
                     <p>Zero lactose</p>
                     <p>500g</p>
                     <p>3 Unidades</p>
-                    <p><button id="more"> <img src="assets/add.svg" alt="Mais"></button></p>
+                    <p><button id="more"> <img src="assets/svg/add.svg" alt="Mais"></button></p>
                 </div>
 
                 <div class="registro">
@@ -133,7 +166,7 @@
                     <p>Zero lactose</p>
                     <p>500g</p>
                     <p>3 Unidades</p>
-                    <p><button id="more"> <img src="assets/add.svg" alt="Mais"></button></p>
+                    <p><button id="more"> <img src="assets/svg/add.svg" alt="Mais"></button></p>
                 </div>
 
                 <div class="registro">
@@ -142,7 +175,7 @@
                     <p>Zero lactose</p>
                     <p>500g</p>
                     <p>3 Unidades</p>
-                    <p><button id="more"> <img src="assets/add.svg" alt="Mais"></button></p>
+                    <p><button id="more"> <img src="assets/svg/add.svg" alt="Mais"></button></p>
                 </div>
 
                 <div class="registro">
@@ -151,7 +184,7 @@
                     <p>Zero lactose</p>
                     <p>500g</p>
                     <p>3 Unidades</p>
-                    <p><button id="more"> <img src="assets/add.svg" alt="Mais"></button></p>
+                    <p><button id="more"> <img src="assets/svg/add.svg" alt="Mais"></button></p>
                 </div>
 
             
@@ -160,4 +193,5 @@
 
     </main>
 </body>
+<script src="CSS/javascript/popup.js"></script>
 </html>
