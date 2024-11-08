@@ -13,7 +13,6 @@ botaoCat.addEventListener('click', () => {
     janelaCat.style.display = 'block';
 });
 
-
 window.addEventListener('click', (event) => {
     if (event.target === janelaPopup) {
         janelaPopup.style.display = 'none';
