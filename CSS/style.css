@@ -115,7 +115,8 @@ header{
     position: fixed; 
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000;
+    pointer-events: auto;
 }
 
 #janela{
@@ -126,8 +127,11 @@ header{
     position: fixed; 
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000;
+    pointer-events: auto;
+    overflow: hidden; 
 }
+
 
 .form {
     position: relative;
@@ -139,7 +143,8 @@ header{
     border-radius: 10px; 
     text-align: left;
     border: #0099DD 4px solid;
-    font-size: 18px; 
+    font-size: 18px;
+    z-index: 11000; 
 }
 .icon img{
     margin: 0 auto;
@@ -203,17 +208,19 @@ button:hover {
 }
 
 .popupcat{
-background-color: #DAEBF2;
-width: 40vw;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 0 auto;
-border: #0099dd 5px solid;
-border-radius: 20px;
-position: relative;
-top: 120px;
+    background-color: #DAEBF2;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: #0099dd 5px solid;
+    border-radius: 20px;
+    position: relative;
+    top: 120px;
+    z-index: 11000;
 }
+
 
 .barra{
     display: flex;
