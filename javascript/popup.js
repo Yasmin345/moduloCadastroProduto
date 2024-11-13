@@ -4,6 +4,7 @@ const botaoCat = document.getElementById('bot2');
 const janelaPopup = document.getElementById('janela_popup');
 const janelaCat = document.getElementById('janela');
 const botaoCancelar = document.getElementById('cancelar'); 
+const botaoCancelar2 = document.getElementById('cancelar2')
 
 
 botaoCad.addEventListener('click', () => {
@@ -24,7 +25,10 @@ window.addEventListener('click', (event) => {
     }
 });
 
-
 botaoCancelar.addEventListener('click', () => {
     janelaPopup.style.display = 'none'; 
+});
+
+botaoCancelar2.addEventListener ('click',() =>{
+    janelaCat.style.display ='none';
 });
