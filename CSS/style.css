@@ -198,7 +198,9 @@ header{
     justify-content: space-around;
     width: 100%;
     margin-bottom: 5px;
+    flex-direction: row-reverse;
 }
+
 
 
 
