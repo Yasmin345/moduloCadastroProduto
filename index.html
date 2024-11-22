@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assests/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="logo">
             <a href="https://taynad.github.io/StockID/"><img src="assets/svg/logo.svg" alt="Logo"></a>
         </div>
         <div class="titulo">
-            <img src="assets/svg/produtos.svg" alt="PRODUTO"> 
+            <img src="assets/svg/produtos.svg" alt="PRODUTO">
             <p>PRODUTOS</p>
         </div>
     </header>
@@ -35,158 +39,183 @@
                 <p>Cadastrar Produto</p>
             </button>
 
-            <div class="janela_popup" id="janela_popup">
-                <section id="popup-cadastrar">
-                    <div class="form">
-                        <div class="icon">
-                            <img src="assets/svg/adicionar.svg" alt="Produtos">
-                        </div>
-                        <form action="formulario" method="post">
-                            <div id="completo">
-                                <label>Nome do produto</label>
-                                <input type="text" id="nome"><br>
-                            </div>
-
-                            <div id="completo">
-                                <label>Descrição</label>
-                                <input type="text" id="Descrição">
-                            </div>
-
-                            <div class="line">
-                                <div id="curto">
-                                    <label>Categoria</label>
-                                    <select name="categoria">
-                                        <option value="" disabled selected>Selecione um item</option>
-                                        <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
-                                        <option value="Alimentos Industrializados">Alimentos Industrializados</option>
-                                        <option value="Bebidas Alcoólicas">Bebidas Alcoólicas</option>
-                                        <option value="Limpeza Doméstica">Limpeza Doméstica</option>
-                                    </select>
-                                </div>
-
-                                <div id="curto">
-                                    <label>Quantidade</label>
-                                    <input type="number" id="Quantidade">
-                                </div>
-                            </div>
-
-                            <div class="line">
-                                <div id="curto">
-                                    <label>Data de Fabricação</label>
-                                    <input type="date" id="fabricação">
-                                </div>
-
-                                <div id="curto">
-                                    <label>Data de Validade</label>
-                                    <input type="date" id="validade">
-                                </div>
-                            </div>
-
-                            <div class="line">
-                                <div id="curto">
-                                    <label>Preço de Compra</label>
-                                    <input type="text" id="valor" name="valor" placeholder="0,00" pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
-                                </div>
-
-                                <div id="curto">
-                                    <label>Preço de Venda</label>
-                                    <input type="text" id="valor2" name="valor2" placeholder="0,00" pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
-                                </div>
-                            </div>
-
-                            <div class="botoescad">
-                            <button type="button" id="cadastrar"><img src="assets/svg/register-svgrepo-com (1).svg" alt="Cadastrar">CADASTRAR</button>
-                            <button type="button"id ="cancelar"> <img src="assets/svg/cancel-close-delete-svgrepo-com (1).svg" alt="">CANCELAR</button>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </div>
-
             <button id="bot2">
                 <img src="assets/svg/funil.svg" alt="Filtrar">
                 <p>Filtrar Categoria</p>
             </button>
-
-            <div class="janela" id="janela">
-                <section id="pcat">
-                    <div class="popupcat">
-                        <div class="barra">
-                            <img src="assets/svg/search-alt-2-svgrepo-com.svg" alt="Lupa">
-                            <input type="text" name="categoria" id="categoria" placeholder="Categoria">
-                        </div>
-
-                        <div class="imagens">
-                            <img src="assets/svg/diretitasvgrepo-com.svg" alt="Direita" style="border: none;">
-                            <figure>
-                                <img src="assets/img/car.jpg" alt="Carnes">
-                                <figcaption>Carnes</figcaption>
-                            </figure>
-
-                            <figure>
-                                <img src="assets/img/lei.jpg" alt="Frios e Laticinios">
-                                <figcaption>Laticinios</figcaption>
-                            </figure>
-
-                            <figure>
-                                <img src="assets/img/pao-frances-cenourao-5-unidades.avif" alt="Pães">
-                                <figcaption>Pães</figcaption>
-                            </figure>
-
-                            <img src="assets/svg/esquerdasvgrepo-com.svg" alt="Esquerda" style="border: none;">
-                        </div>
-                        <div class="botoescat">
-                            <button type="button" id="selecionar"><img src="assets/svg/check-circle-svgrepo-com.svg" alt="Selecionar">SELECIONAR</button>
-                            <button type="button"id ="cancelar2"> <img src="assets/svg/cancel-close-delete-svgrepo-com (1).svg" alt="">CANCELAR</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </section>
 
         <section id="lista">
             <div class="descricoes">
-                <p style="width: 11%">COD</p>
-                <p>Nome</p>
-                <p>Categoria</p>
-                <p>Descrição</p>
-                <p>Quantidade</p>
+                <p class="codigo">COD</p>
+                <p class="nome">Nome</p>
+                <p class="categoria">Categoria</p>
+                <p class="descricao">Descrição</p>
+                <p class="quantidade">Quantidade</p>
                 <p>Mais</p>
             </div>
 
             <div class="listagem">
-                <div class="registro">
-                    <p style="width: 11%">001</p>
-                    <p>Doce de Leite</p>
-                    <p>Zero lactose</p>
-                    <p>500g</p>
-                    <p>3 Unidades</p>
-                    <p><button id="more"><img src="assets/svg/add.svg" alt="Mais"></button></p>
-                </div>
-
 
                 <div class="registro">
-                    <p style="width: 11%">002</p>
-                    <p>Chocolate</p>
-                    <p>Alimentos</p>
-                    <p>200g</p>
-                    <p>5 Unidades</p>
-                    <p><button id="more"><img src="assets/svg/add.svg" alt="Mais"></button></p>
+                    <p class="codigo">001</p>
+                    <p class="nome">Doce de Leite</p>
+                    <p class="categoria">Zero lactose</p>
+                    <p class="descricao">500g</p>
+                    <p class="quantidade">3 Unidades</p>
+                    <button id="btn_mais">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            fill="none">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="registro">
-                    <p style="width: 11%">003</p>
-                    <p>Agua Sanitária</p>
-                    <p>sem cloro</p>
-                    <p>2 litros</p>
-                    <p>12 Unidades</p>
-                    <p><button id="more"><img src="assets/svg/add.svg" alt="Mais"></button></p>
+                    <p class="codigo">002</p>
+                    <p class="nome">Chocolate</p>
+                    <p class="categoria">Alimentos</p>
+                    <p class="descricao">200g</p>
+                    <p class="quantidade">5 Unidades</p>
+                    <button id="btn_mais">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            fill="none">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="registro">
+                    <p class="codigo">003</p>
+                    <p class="nome">Agua Sanitária</p>
+                    <p class="categoria">sem cloro</p>
+                    <p class="descricao">2 litros</p>
+                    <p class="quantidade">12 Unidades</p>
+                    <button id="btn_mais">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            fill="none">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
+                        </svg>
+                    </button>
                 </div>
 
             </div>
         </section>
+        <div class="janela_popup" id="janela_popup">
+            <section id="popup-cadastrar">
+                <div class="form">
+                    <div class="icon">
+                        <img src="assets/svg/adicionar.svg" alt="Produtos">
+                    </div>
+                    <form action="formulario" method="post">
+                        <div id="completo">
+                            <label>Nome do produto</label>
+                            <input type="text" id="nome">
+                        </div>
+
+                        <div id="completo">
+                            <label>Descrição</label>
+                            <input type="text" id="Descrição">
+                        </div>
+
+                        <div class="line">
+                            <div id="curto">
+                                <label>Categoria</label>
+                                <select name="categoria">
+                                    <option value="" disabled selected>Selecione um item</option>
+                                    <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
+                                    <option value="Alimentos Industrializados">Alimentos Industrializados</option>
+                                    <option value="Bebidas Alcoólicas">Bebidas Alcoólicas</option>
+                                    <option value="Limpeza Doméstica">Limpeza Doméstica</option>
+                                </select>
+                            </div>
+
+                            <div id="curto">
+                                <label>Quantidade</label>
+                                <input type="number" id="Quantidade">
+                            </div>
+                        </div>
+
+                        <div class="line">
+                            <div id="curto">
+                                <label>Data de Fabricação</label>
+                                <input type="date" id="fabricação">
+                            </div>
+
+                            <div id="curto">
+                                <label>Data de Validade</label>
+                                <input type="date" id="validade">
+                            </div>
+                        </div>
+
+                        <div class="line">
+                            <div id="curto">
+                                <label>Preço de Compra</label>
+                                <input type="text" id="valor" name="valor" placeholder="0,00"
+                                    pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                            </div>
+
+                            <div id="curto">
+                                <label>Preço de Venda</label>
+                                <input type="text" id="valor2" name="valor2" placeholder="0,00"
+                                    pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                            </div>
+
+                        </div>
+
+                        <div class="botoescad">
+                            <button type="button" id="cadastrar">
+                                <img src="assets/svg/register-svgrepo-com (1).svg" alt="Cadastrar">CADASTRAR</button>
+
+                            <button type="button" id="cancelar"> <img
+                                    src="assets/svg/cancel-close-delete-svgrepo-com (1).svg" alt="">CANCELAR</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="janela" id="janela">
+            <section id="pcat">
+                <div class="popupcat">
+                    <div class="barra">
+                        <img src="assets/svg/search-alt-2-svgrepo-com.svg" alt="Lupa">
+                        <input type="text" name="categoria" id="categoria" placeholder="Categoria">
+                    </div>
+
+                    <div class="imagens">
+                        <img src="assets/svg/diretitasvgrepo-com.svg" alt="Direita" style="border: none;">
+                        <figure>
+                            <img src="assets/img/car.jpg" alt="Carnes">
+                            <figcaption>Carnes</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="assets/img/lei.jpg" alt="Frios e Laticinios">
+                            <figcaption>Laticinios</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="assets/img/pao-frances-cenourao-5-unidades.avif" alt="Pães">
+                            <figcaption>Pães</figcaption>
+                        </figure>
+
+                        <img src="assets/svg/esquerdasvgrepo-com.svg" alt="Esquerda" style="border: none;">
+                    </div>
+                    <div class="botoescat">
+                        <button type="button" id="selecionar"><img src="assets/svg/check-circle-svgrepo-com.svg"
+                                alt="Selecionar">SELECIONAR</button>
+                        <button type="button" id="cancelar2"> <img
+                                src="assets/svg/cancel-close-delete-svgrepo-com (1).svg" alt="">CANCELAR</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="javascript/popup.js"></script>
 </body>
+
 </html>
