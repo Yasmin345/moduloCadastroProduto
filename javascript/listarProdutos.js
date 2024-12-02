@@ -139,4 +139,10 @@ btn_deletar.addEventListener('click', async (event) => {
     loadItems();
 })
 
+window.addEventListener('click', (event) => {
+    if (event.target === edicao_delete) {
+        edicao_delete.style.display = 'none';
+    }
+});
+
 loadItems();
