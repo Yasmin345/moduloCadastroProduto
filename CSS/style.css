@@ -90,7 +90,6 @@ main {
     background-color: #ff9933;
     color: #ffffff;
     cursor: pointer;
-    color: white;
     transform: scale(1.1);
     transition-duration: 300ms;
     box-shadow: 2px 2px 10px #ff9933;
@@ -101,7 +100,9 @@ main {
 #cadastrar:hover img,
 #cancelar:hover img,
 #cancelar2:hover img,
-#selecionar:hover img {
+#selecionar:hover img,
+#editar:hover img,
+#deletar:hover img {
     filter: brightness(0) invert(1);
 }
 
@@ -132,7 +133,7 @@ main {
     font-size: 28px;
 }
 
-#janela_popup, #janela{
+#janela_popup, #janela, #popup_edicao{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -180,7 +181,7 @@ main {
 
 form {
     width: 95%;
-    height: 83%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,12 +268,12 @@ input[type="date"] {
     height: 40px;
 }
 
-.botoescad #cadastrar {
+.botoescad #cadastrar, .botoescad #editar{
     background-color: #ffffff;
     color: #ff9933;
 }
 
-.botoescad #cancelar, #cancelar2{
+#cancelar, #cancelar2, #deletar{
     background-color: #ffffff;
     color: #dd0000;
 }
@@ -286,7 +287,7 @@ input[type="date"] {
     margin-left: 5px;
 }
 
-#cadastrar:hover{
+#cadastrar:hover, #editar:hover {
     background-color: #ff8500;
     color: #ffffff;
     border:#ff8500 5px solid;
@@ -295,7 +296,7 @@ input[type="date"] {
     box-shadow: 2px 2px 10px ;
 }
 
-#cancelar:hover, #cancelar2:hover {
+#cancelar:hover, #cancelar2:hover, #deletar:hover {
     background-color: #dd0000;
     color: #ffffff;
     border:#dd0000 5px solid;
@@ -457,3 +458,10 @@ figcaption{
     transition-duration: 150ms;
     box-shadow: 2px 2px 5px #E07000;
 }
+
+#titulo_editar {
+    color: #0099dd;
+    margin: 10px 0;
+}
+
+

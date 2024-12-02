@@ -55,52 +55,7 @@
                 <p>Mais</p>
             </div>
 
-            <div class="listagem">
-
-                <div class="registro">
-                    <p class="codigo">001</p>
-                    <p class="nome">Doce de Leite</p>
-                    <p class="categoria">Zero lactose</p>
-                    <p class="descricao">500g</p>
-                    <p class="quantidade">3 Unidades</p>
-                    <button id="btn_mais">
-                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            fill="none">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="registro">
-                    <p class="codigo">002</p>
-                    <p class="nome">Chocolate</p>
-                    <p class="categoria">Alimentos</p>
-                    <p class="descricao">200g</p>
-                    <p class="quantidade">5 Unidades</p>
-                    <button id="btn_mais">
-                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            fill="none">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="registro">
-                    <p class="codigo">003</p>
-                    <p class="nome">Agua Sanitária</p>
-                    <p class="categoria">sem cloro</p>
-                    <p class="descricao">2 litros</p>
-                    <p class="quantidade">12 Unidades</p>
-                    <button id="btn_mais">
-                        <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            fill="none">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z" />
-                        </svg>
-                    </button>
-                </div>
+            <div class="listagem" id="listagem">
 
             </div>
         </section>
@@ -110,21 +65,21 @@
                     <div class="icon">
                         <img src="assets/svg/adicionar.svg" alt="Produtos">
                     </div>
-                    <form action="formulario" method="post">
+                    <form id="form_cadastro">
                         <div id="completo">
                             <label>Nome do produto</label>
-                            <input type="text" id="nome">
+                            <input type="text" id="nome" name="nome">
                         </div>
 
                         <div id="completo">
                             <label>Descrição</label>
-                            <input type="text" id="Descrição">
+                            <input type="text" id="descricao" name="descricao">
                         </div>
 
                         <div class="line">
                             <div id="curto">
                                 <label>Categoria</label>
-                                <select name="categoria">
+                                <select name="categoria" id="categoria">
                                     <option value="" disabled selected>Selecione um item</option>
                                     <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
                                     <option value="Alimentos Industrializados">Alimentos Industrializados</option>
@@ -135,39 +90,41 @@
 
                             <div id="curto">
                                 <label>Quantidade</label>
-                                <input type="number" id="Quantidade">
+                                <input type="number" id="quantidade" name="quantidade">
                             </div>
                         </div>
 
                         <div class="line">
                             <div id="curto">
                                 <label>Data de Fabricação</label>
-                                <input type="date" id="fabricação">
+                                <input type="date" id="fabricacao" name="fabricacao">
                             </div>
 
                             <div id="curto">
                                 <label>Data de Validade</label>
-                                <input type="date" id="validade">
+                                <input type="date" id="validade" name="validade">
                             </div>
                         </div>
 
                         <div class="line">
                             <div id="curto">
                                 <label>Preço de Compra</label>
-                                <input type="text" id="valor" name="valor" placeholder="0,00"
-                                    pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                                <input type="text" id="compra" name="compra" placeholder="0,00"
+                                    pattern="^[0-9]+(,[0-9]{1,2})?$"
+                                    title="Insira um valor em reais, por exemplo: 1000,00">
                             </div>
 
                             <div id="curto">
                                 <label>Preço de Venda</label>
-                                <input type="text" id="valor2" name="valor2" placeholder="0,00"
-                                    pattern="^\d+(\,\d{1,2})?$" title="Insira um valor em reais, por exemplo: 1000,00">
+                                <input type="text" id="venda" name="venda" placeholder="0,00"
+                                    pattern="^[0-9]+(,[0-9]{1,2})?$"
+                                    title="Insira um valor em reais, por exemplo: 1000,00">
                             </div>
 
                         </div>
 
                         <div class="botoescad">
-                            <button type="button" id="cadastrar">
+                            <button type="submit" id="cadastrar">
                                 <img src="assets/svg/register-svgrepo-com (1).svg" alt="Cadastrar">CADASTRAR</button>
 
                             <button type="button" id="cancelar"> <img
@@ -213,9 +170,79 @@
                 </div>
             </section>
         </div>
+        <div id="popup_edicao">
+            <section class="edit_delete">
+                <div class="form">
+                    <h1 id="titulo_editar">Editar / Excluir venda</h1>
+                    <form id="form_edit">
+                        <div id="completo">
+                            <label>Código</label>
+                            <input type="text" id="novo_id" name="novo_id" readonly>
+                        </div>
+                        <div id="completo">
+                            <label>Nome do produto</label>
+                            <input type="text" id="novo_nome" name="novo_nome">
+                        </div>
+                        <div id="completo">
+                            <label>Descrição</label>
+                            <input type="text" id="novo_descricao" name="novo_descricao">
+                        </div>
+                        <div class="line">
+                            <div id="curto">
+                                <label>Categoria</label>
+                                <select name="novo_categoria" id="novo_categoria">
+                                    <option value="" disabled selected>Selecione um item</option>
+                                    <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
+                                    <option value="Alimentos Industrializados">Alimentos Industrializados</option>
+                                    <option value="Bebidas Alcoólicas">Bebidas Alcoólicas</option>
+                                    <option value="Limpeza Doméstica">Limpeza Doméstica</option>
+                                </select>
+                            </div>
+                            <div id="curto">
+                                <label>Quantidade</label>
+                                <input type="number" id="novo_quantidade" name="novo_quantidade">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div id="curto">
+                                <label>Data de Fabricação</label>
+                                <input type="date" id="novo_fabricacao" name="novo_fabricacao">
+                            </div>
+                            <div id="curto">
+                                <label>Data de Validade</label>
+                                <input type="date" id="novo_validade" name="novo_validade">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div id="curto">
+                                <label>Preço de Compra</label>
+                                <input type="text" id="novo_compra" name="novo_compra" placeholder="0,00"
+                                    pattern="^[0-9]+(,[0-9]{1,2})?$"
+                                    title="Insira um valor em reais, por exemplo: 1000,00">
+                            </div>
+                            <div id="curto">
+                                <label>Preço de Venda</label>
+                                <input type="text" id="novo_venda" name="novo_venda" placeholder="0,00"
+                                    pattern="^[0-9]+(,[0-9]{1,2})?$"
+                                    title="Insira um valor em reais, por exemplo: 1000,00">
+                            </div>
+                        </div>
+                        <div class="botoescad">
+                            <button type="button" id="editar">
+                                <img src="assets/svg/register-svgrepo-com (1).svg" alt="Cadastrar">EDITAR</button>
+
+                            <button type="button" id="deletar"> <img
+                                    src="assets/svg/cancel-close-delete-svgrepo-com (1).svg" alt="">DELETAR</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="javascript/popup.js"></script>
+    <script src="javascript/cadastrarProduto.js"></script>
+    <script src="javascript/listarProdutos.js"></script>
 </body>
 
 </html>
